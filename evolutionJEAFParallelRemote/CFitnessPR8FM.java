@@ -115,7 +115,7 @@ public double evaluate(double[] values) {
 //*******************************************************************************************************************************
 	
 		
-		rfitness = RunScene(vrep, clientID, "/home/rodr/EvolWork/Modular/ModularCPGA1.ttt",  MaxTime);
+		rfitness = RunScene(vrep, clientID, "../Modular/ModularCPGA1.ttt",  MaxTime);
 		if(rfitness[0]==-1){
 			RestartSim( myRank, j);
 			continue;
@@ -125,7 +125,7 @@ public double evaluate(double[] values) {
 		
 //*******************************************************************************************************************************		
 		
-		rfitness = RunScene(vrep, clientID, "/home/rodr/EvolWork/Modular/ModularCPGA2.ttt",  MaxTime);
+		rfitness = RunScene(vrep, clientID, "../Modular/ModularCPGA2.ttt",  MaxTime);
 		if(rfitness[0]==-1){
 			RestartSim( myRank, j);
 			continue;
@@ -134,7 +134,7 @@ public double evaluate(double[] values) {
 		
 //*******************************************************************************************************************************		
 		
-		rfitness = RunScene(vrep, clientID, "/home/rodr/EvolWork/Modular/ModularCPGA3.ttt",  MaxTime);
+		rfitness = RunScene(vrep, clientID, "../Modular/ModularCPGA3.ttt",  MaxTime);
 		if(rfitness[0]==-1){
 			RestartSim( myRank, j);
 			continue;
@@ -143,7 +143,7 @@ public double evaluate(double[] values) {
 		
 //*******************************************************************************************************************************		
 		
-		rfitness = RunScene(vrep, clientID, "/home/rodr/EvolWork/Modular/ModularCPGA4.ttt",  MaxTime);
+		rfitness = RunScene(vrep, clientID, "../Modular/ModularCPGA4.ttt",  MaxTime);
 		if(rfitness[0]==-1){
 			RestartSim( myRank, j);
 			continue;
@@ -214,7 +214,7 @@ public double evaluate(double[] values) {
     		
 			qq = new ProcessBuilder(vrepcommand,"-h");
 			//Map<String, String> env = qq.environment();
-			qq.directory(new File("/home/rodr/V-REP/Vrep"+myRank+"/"));
+			qq.directory(new File("../V-REP/Vrep"+myRank+"/"));
 			//qq.inheritIO();
 			//File log = new File("Simout/log");
 			qq.redirectErrorStream(true);

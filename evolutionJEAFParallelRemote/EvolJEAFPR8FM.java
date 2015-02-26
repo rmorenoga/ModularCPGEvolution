@@ -34,7 +34,7 @@ public class EvolJEAFPR8FM {
 		try {
 			ProcessBuilder qq=new ProcessBuilder(vrepcommand,"-h");
 			//Map<String, String> env = qq.environment();
-			qq.directory(new File("/home/rodr/V-REP/Vrep"+myRank+"/"));
+			qq.directory(new File("../V-REP/Vrep"+myRank+"/"));
 			//qq.inheritIO();
 			File log = new File("Simout/log");
 			qq.redirectErrorStream(true);
